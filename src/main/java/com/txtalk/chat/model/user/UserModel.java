@@ -23,7 +23,7 @@ public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer user_id;
     private String firstname;
     private String lastname;
     private String email;
