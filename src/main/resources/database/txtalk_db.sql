@@ -107,9 +107,10 @@ SELECT DISTINCT u.nickname
 FROM txtalk_db.user u
 JOIN txtalk_db.message m ON u.user_id = m.user_id
 JOIN txtalk_db.chat c ON m.chat_id = c.chat_id
-WHERE c.chat_name = 'chat2';
+WHERE c.chat_id = 1;
 
 --@block:
-SELECT c.chat_name
+SELECT c.chat_id,
+c.chat_name
 FROM txtalk_db.chat c
 WHERE chat_name = "chat1";
