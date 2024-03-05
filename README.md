@@ -24,6 +24,9 @@ List of branches :
   \
   &nbsp;
 - feature/gh-12-database_setup
+  \
+  &nbsp;
+- feature/gh-13-handling_exceptions
 
 2024-03-05T11:34:06.829+01:00  WARN 15872 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
