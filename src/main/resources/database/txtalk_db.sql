@@ -79,3 +79,12 @@ FROM txtalk_db.message m
   JOIN txtalk_db.user u ON m.user_id = u.user_id
   JOIN txtalk_db.chat c ON m.chat_id = c.chat_id
 WHERE u.nickname = 'test1';
+--@block:
+SELECT m.message_id,
+  m.message_content,
+  m.created_at,
+  u.nickname
+FROM txtalk_db.message m
+  JOIN txtalk_db.user u ON m.user_id = u.user_id
+  JOIN txtalk_db.chat c ON m.chat_id = c.chat_id
+WHERE c.chat_name = 'chat1';
