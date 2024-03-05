@@ -30,7 +30,7 @@ CREATE TABLE txtalk_db.chat (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- create a join table to join users and messages tables
+-- create a join table to join users and messages tables 
 --@block:
 CREATE TABLE txtalk_db.user_message (
   user_id INT NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE txtalk_db.user_message (
   FOREIGN KEY (message_id) REFERENCES message(message_id)
 );
 
--- create a join table to join chats and messages tables
+-- create a join table to join chats and messages tables 
 --@block:
 CREATE TABLE txtalk_db.chat_message (
   chat_id INT NOT NULL,
@@ -47,3 +47,17 @@ CREATE TABLE txtalk_db.chat_message (
   FOREIGN KEY (chat_id) REFERENCES chat(chat_id),
   FOREIGN KEY (message_id) REFERENCES message(message_id)
 );
+
+--@block:
+INSERT INTO txtalk_db.user (firstname, lastname, email, password, role) VALUES
+('John', 'Doe', 'john.doe@example.com', 'password1', 'admin'),
+('Jane', 'Doe', 'jane.doe@example.com', 'password2', 'user'),
+('Alice', 'Smith', 'alice.smith@example.com', 'password3', 'user'),
+('Bob', 'Johnson', 'bob.johnson@example.com', 'password4', 'user'),
+('Charlie', 'Brown', 'charlie.brown@example.com', 'password5', 'admin');
+
+--@block:
+SELECT * FROM txtalk_db.user;
+
+--@block:
+SELECT * FROM user u WHERE u.email = "john.doe@example.com";
