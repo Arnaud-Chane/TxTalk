@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/chat")
@@ -26,8 +25,8 @@ public class ChatController {
         return chatRepository.findAllChats();
     }
 
-    @GetMapping("/{chatName}/users")
-    public List<UserModel> getUsersByChat(@PathVariable("chatName") String chatName) {
-        return chatRepository.findAllUsersByChat(chatName);
+    @GetMapping("/{chatId}/users")
+    public List<String> getUsersByChat(@PathVariable("chatId") Integer chatId) {
+        return chatRepository.findAllUsersByChat(chatId);
     }
 }
