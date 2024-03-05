@@ -4,20 +4,24 @@
 
 List of branches :
 
-- user_model
-- user_repository
-- user_controller
+- feature/gh-1-user_model
+- feature/gh-2-user_repository
+- feature/gh-3-user_controller
   \
   &nbsp;
-- message_model
-- message_repository
-- message_controller
+- feature/gh-4-message_model
+- feature/gh-5-message_repository
+- feature/gh-6-message_controller
   \
   &nbsp;
-- chat_model
-- chat_repository
-- chat_controller
+- feature/gh-7-chat_model
+- feature/gh-8-chat_repository
+- feature/gh-9-chat_controller
   \
   &nbsp;
-- security_configuration
-- security_authentication_and_authorization
+- feature/gh-10-security_configuration
+- feature/gh-11-security_authentication_and_authorization
+  \
+  &nbsp;
+- feature/gh-12-database_setup
+
