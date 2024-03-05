@@ -27,4 +27,6 @@ public class UserController {
         UserModel current = (UserModel) userRepository.findUserByEmail(body.get("email"));
         return current;
     }
+
+    // TODO : Post to get by nickname
 }
