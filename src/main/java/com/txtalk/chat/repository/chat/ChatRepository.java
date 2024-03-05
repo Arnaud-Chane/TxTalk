@@ -10,7 +10,7 @@ import java.util.List;
 public interface ChatRepository extends JpaRepository<ChatModel, Integer> {
 
     @Query(value = "SELECT * FROM chat", nativeQuery = true)
-    List<ChatModel> getAllChats();
+    List<ChatModel> findAllChats();
 
     @Query(value = "SELECT DISTINCT u.nickname\n" +
             "FROM txtalk_db.user u\n" +
