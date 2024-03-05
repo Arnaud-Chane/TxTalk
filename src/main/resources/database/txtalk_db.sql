@@ -6,8 +6,7 @@ USE txtalk_db;
 --@block: create-table
 CREATE TABLE txtalk_db.user (
   user_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  firstname VARCHAR(255) NOT NULL,
-  lastname VARCHAR(255) NOT NULL,
+  nickname VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL,
   password VARCHAR(255) NOT NULL,
   role VARCHAR(255) NOT NULL
@@ -29,18 +28,23 @@ CREATE TABLE txtalk_db.chat (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 --@block:
-INSERT INTO txtalk_db.user (firstname, lastname, email, password, role)
+INSERT INTO txtalk_db.user (nickname, email, password, role)
 VALUES
-('test1', 'NameAdmin', 'test1@example.com', 'pw', 'admin'),
-('test2', 'NameUser', 'test2@example.com', 'pw', 'user'),
-('test3', 'NameUser', 'test3@example.com', 'pw', 'user'),
-('test4', 'NameUser', 'test4@example.com', 'pw', 'user'),
-('test5', 'NameUser', 'test5@example.com', 'pw', 'user');
+('test1', 'test1@example.com', 'pw', 'admin'),
+('test2', 'test2@example.com', 'pw', 'user'),
+('test3', 'test3@example.com', 'pw', 'user'),
+('test4', 'test4@example.com', 'pw', 'user'),
+('test5', 'test5@example.com', 'pw', 'user');
 
 --@block:
 SELECT *
 FROM txtalk_db.user;
 --@block:
 SELECT *
+FROM user u
+WHERE u.email = "test1@example.com";
+
+--@block:
+SELECT nickname
 FROM user u
 WHERE u.email = "test1@example.com";
