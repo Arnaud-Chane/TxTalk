@@ -9,10 +9,10 @@ import java.util.List;
 import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<UserModel, Integer> {
-    @Query(value = "SELECT * FROM users", nativeQuery = true)
+    @Query(value = "SELECT * FROM user", nativeQuery = true)
     List<UserModel> findAllUsers();
 
-    @Query("SELECT * FROM users u WHERE u.email = :email")
-    List<UserModel> findByEmail(@Param("email") String email);
+    @Query("SELECT * FROM user u WHERE u.email = :email")
+    List<UserModel> findUserByEmail(@Param("email") String email);
 
 }
