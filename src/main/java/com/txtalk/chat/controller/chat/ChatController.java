@@ -20,6 +20,6 @@ public class ChatController {
 
     @GetMapping("/all")
     public List<ChatModel> getAllChats(){
-        return chatRepository.getAllChats();
+        return chatRepository.findAllChats();
     }
 }
