@@ -25,3 +25,8 @@ List of branches :
   &nbsp;
 - feature/gh-12-database_setup
 
+2024-03-05T11:34:06.829+01:00  WARN 15872 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 84b15343-1e8e-4812-a969-6b7f467430e5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
