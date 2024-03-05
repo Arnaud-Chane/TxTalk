@@ -15,7 +15,7 @@ public interface ChatRepository extends JpaRepository<ChatModel, Integer> {
     @Query(value = "SELECT c.chat_name\n" +
             "FROM txtalk_db.chat c\n" +
             "WHERE chat_name = ?1", nativeQuery = true)
-    ChatModel findChatByName();
+    ChatModel findChatByName(String chatName);
 
     @Query(value = "SELECT DISTINCT u.nickname\n" +
             "FROM txtalk_db.user u\n" +
