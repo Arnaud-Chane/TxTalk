@@ -57,10 +57,23 @@ VALUES ('Hello, this is test1', 1, 1),
   ('I am fine, thank you, test1!', 4, 3),
   ('Hello, this is test1 again in chat1', 1, 1),
   ('Hello, this is test2 again in chat1', 2, 1);
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
 -- TESTING SOME QUERIES
+-- 
+-- 
+-- 
 --@block:
 SELECT *
 FROM txtalk_db.user;
+
+--@block:
+SELECT *
+FROM txtalk_db.chat;
 --@block:
 SELECT *
 FROM user u
