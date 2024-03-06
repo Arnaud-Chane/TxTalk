@@ -22,14 +22,19 @@ public class UserController {
         return userRepository.findAllUsers();
     }
 
+    @GetMapping("/all/count")
+    public Integer getNumberOfAllUsers(){
+        return userRepository.countAllUsers();
+    }
+
     @PostMapping("/email")
     public UserModel getUserByEmail(@RequestBody Map<String, String> body){
         return (UserModel) userRepository.findUserByEmail(body.get("email"));
     }
 
     // TODO : Post to get by nickname
-    @PostMapping("/nickname")
-    public UserModel getUserByNickname(@RequestBody Map<String, String> body) {
-        return (UserModel) userRepository.findUserByNickname(body.get("nickname"));
-    }
+//    @PostMapping("/nickname")
+//    public UserModel getUserByNickname(@RequestBody Map<String, String> body) {
+//        return (UserModel) userRepository.findUserByNickname(body.get("nickname"));
+//    }
 }

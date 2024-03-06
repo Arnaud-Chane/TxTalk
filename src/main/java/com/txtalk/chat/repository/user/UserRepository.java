@@ -12,6 +12,10 @@ public interface UserRepository extends JpaRepository<UserModel, Integer> {
     @Query(value = "SELECT * FROM user", nativeQuery = true)
     List<UserModel> findAllUsers();
 
+    @Query(value = "SELECT COUNT(*)\n" +
+            "FROM txtalk_db.user", nativeQuery = true)
+    Integer countAllUsers();
+
     @Query(value = "SELECT * FROM user u WHERE u.email = ?1", nativeQuery = true)
     UserModel findUserByEmail(String email);
 
