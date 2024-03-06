@@ -24,9 +24,16 @@ List of branches :
   \
   &nbsp;
 - feature/gh-12-database_setup
+- feature/gh-13-handling_exceptions
+- feature/gh-14-get_user_by_nickname
+- feature/gh-15-get_message_by_chat
+
+
   \
   &nbsp;
-- feature/gh-13-handling_exceptions
+  \
+  &nbsp;
+- 
 
 2024-03-05T11:34:06.829+01:00  WARN 15872 --- [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
