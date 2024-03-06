@@ -24,9 +24,12 @@ public class UserController {
 
     @PostMapping("/email")
     public UserModel getUserByEmail(@RequestBody Map<String, String> body){
-        UserModel current = (UserModel) userRepository.findUserByEmail(body.get("email"));
-        return current;
+        return (UserModel) userRepository.findUserByEmail(body.get("email"));
     }
 
     // TODO : Post to get by nickname
+    @PostMapping("/nickname")
+    public UserModel getUserByNickname(@RequestBody Map<String, String> body) {
+        return (UserModel) userRepository.findUserByNickname(body.get("nickname"));
+    }
 }
