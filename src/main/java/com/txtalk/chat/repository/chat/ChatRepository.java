@@ -9,8 +9,11 @@ import java.util.List;
 
 public interface ChatRepository extends JpaRepository<ChatModel, Integer> {
 
-    @Query(value = "SELECT * FROM chat", nativeQuery = true)
+    @Query("SELECT c FROM ChatModel c")
     List<ChatModel> findAllChats();
+
+//    @Query(value = "SELECT * FROM chat", nativeQuery = true)
+//    List<ChatModel> findAllChats();
 
     @Query(value = "SELECT c.chat_id,\n" +
             "c.chat_name\n" +

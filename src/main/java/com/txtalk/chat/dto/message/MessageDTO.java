@@ -5,7 +5,6 @@ import lombok.Getter;
 
 import java.sql.Timestamp;
 
-@Getter
 @Data
 public class MessageDTO {
 
