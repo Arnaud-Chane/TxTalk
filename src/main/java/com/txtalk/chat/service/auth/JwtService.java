@@ -1,4 +1,4 @@
-package com.txtalk.chat.service;
+package com.txtalk.chat.service.auth;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
