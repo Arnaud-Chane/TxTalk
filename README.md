@@ -27,6 +27,8 @@ List of branches :
 - feature/gh-13-handling_exceptions
 - feature/gh-14-get_user_by_nickname
 - feature/gh-15-get_message_by_chat
+- feature/gh-16-dto_message_by_chat
+
 
 
   \
