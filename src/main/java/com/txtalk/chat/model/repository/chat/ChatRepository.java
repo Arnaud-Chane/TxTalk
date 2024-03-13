@@ -1,7 +1,6 @@
-package com.txtalk.chat.repository.chat;
+package com.txtalk.chat.model.repository.chat;
 
-import com.txtalk.chat.model.chat.ChatModel;
-import com.txtalk.chat.model.user.UserModel;
+import com.txtalk.chat.model.entity.chat.ChatModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

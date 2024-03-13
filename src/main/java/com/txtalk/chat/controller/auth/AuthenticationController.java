@@ -1,8 +1,8 @@
 package com.txtalk.chat.controller.auth;
 
-import com.txtalk.chat.model.auth.AuthenticationRequestModel;
-import com.txtalk.chat.model.auth.AuthenticationResponseModel;
-import com.txtalk.chat.model.register.RegisterRequestModel;
+import com.txtalk.chat.model.entity.auth.AuthenticationRequestModel;
+import com.txtalk.chat.model.entity.auth.AuthenticationResponseModel;
+import com.txtalk.chat.model.entity.register.RegisterRequestModel;
 import com.txtalk.chat.service.auth.AuthenticationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

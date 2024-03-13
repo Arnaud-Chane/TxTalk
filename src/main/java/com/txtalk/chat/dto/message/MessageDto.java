@@ -1,24 +1,18 @@
 package com.txtalk.chat.dto.message;
 
-import lombok.Builder;
-import lombok.Data;
-
-@Data
-@Builder
 public class MessageDto {
-
+    private Integer message_id;
     private String message_content;
-    private Integer user_id;
-    private Integer chat_id;
+    private String nickname;
+    private String chat_name;
     private String created_at;
 
-    public MessageDto() {}
+    public Integer getMessage_id() {
+        return message_id;
+    }
 
-    public MessageDto(String message_content, Integer user_id, Integer chat_id, String created_at) {
-        this.message_content = message_content;
-        this.user_id = user_id;
-        this.chat_id = chat_id;
-        this.created_at = created_at;
+    public void setMessage_id(Integer message_id) {
+        this.message_id = message_id;
     }
 
     public String getMessage_content() {
@@ -29,20 +23,20 @@ public class MessageDto {
         this.message_content = message_content;
     }
 
-    public Integer getUser_id() {
-        return user_id;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setUser_id(Integer user_id) {
-        this.user_id = user_id;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
-    public Integer getChat_id() {
-        return chat_id;
+    public String getChat_name() {
+        return chat_name;
     }
 
-    public void setChat_id(Integer chat_id) {
-        this.chat_id = chat_id;
+    public void setChat_name(String chat_name) {
+        this.chat_name = chat_name;
     }
 
     public String getCreated_at() {

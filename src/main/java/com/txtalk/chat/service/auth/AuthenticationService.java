@@ -1,11 +1,11 @@
 package com.txtalk.chat.service.auth;
 
-import com.txtalk.chat.model.auth.AuthenticationRequestModel;
-import com.txtalk.chat.model.auth.AuthenticationResponseModel;
-import com.txtalk.chat.model.register.RegisterRequestModel;
-import com.txtalk.chat.model.user.Role;
-import com.txtalk.chat.model.user.UserModel;
-import com.txtalk.chat.repository.user.UserRepository;
+import com.txtalk.chat.model.entity.auth.AuthenticationRequestModel;
+import com.txtalk.chat.model.entity.auth.AuthenticationResponseModel;
+import com.txtalk.chat.model.entity.register.RegisterRequestModel;
+import com.txtalk.chat.model.entity.user.Role;
+import com.txtalk.chat.model.entity.user.UserModel;
+import com.txtalk.chat.model.repository.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

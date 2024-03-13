@@ -1,4 +1,4 @@
-package com.txtalk.chat.model.register;
+package com.txtalk.chat.model.entity.register;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

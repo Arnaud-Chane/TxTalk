@@ -1,8 +1,7 @@
 package com.txtalk.chat.controller.chat;
 
-import com.txtalk.chat.model.chat.ChatModel;
-import com.txtalk.chat.model.user.UserModel;
-import com.txtalk.chat.repository.chat.ChatRepository;
+import com.txtalk.chat.model.entity.chat.ChatModel;
+import com.txtalk.chat.model.repository.chat.ChatRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

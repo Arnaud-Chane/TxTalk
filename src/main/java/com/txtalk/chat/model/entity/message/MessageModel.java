@@ -1,4 +1,4 @@
-package com.txtalk.chat.model.chat;
+package com.txtalk.chat.model.entity.message;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -11,13 +11,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "chat")
-public class ChatModel {
+@Table(name = "message")
+public class MessageModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer chat_id;
+    private Integer message_id;
 
-    private String chat_name;
+    private String message_content;
+    private Integer user_id;
+    private Integer chat_id;
     private String created_at;
 }

@@ -1,4 +1,4 @@
-package com.txtalk.chat.model.user;
+package com.txtalk.chat.model.entity.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
