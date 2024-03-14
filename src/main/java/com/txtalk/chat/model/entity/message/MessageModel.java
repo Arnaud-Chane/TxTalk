@@ -22,4 +22,8 @@ public class MessageModel {
     private Integer user_id;
     private Integer chat_id;
     private String created_at;
+
+    public MessageModel(String message_content) {
+        this.message_content = message_content;
+    }
 }
