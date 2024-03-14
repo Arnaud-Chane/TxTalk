@@ -21,7 +21,7 @@ public class AuthenticationService {
     private final AuthenticationManager authenticationManager;
 
     public AuthenticationResponseModel register(RegisterRequestModel request) {
-        var user = UserModel.builder()
+        UserModel user = UserModel.builder()
                 .firstname(request.getFirstname())
                 .lastname(request.getLastname())
                 .nickname(request.getNickname())
@@ -30,7 +30,7 @@ public class AuthenticationService {
                 .role(Role.USER)
                 .build();
         userRepository.save(user);
-        var jwtToken = jwtService.generateToken(user);
+        String jwtToken = jwtService.generateToken(user);
         return AuthenticationResponseModel.builder()
                 .token(jwtToken)
                 .build();
