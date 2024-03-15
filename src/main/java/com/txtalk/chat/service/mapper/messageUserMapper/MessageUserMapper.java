@@ -13,7 +13,4 @@ public interface MessageUserMapper {
     @Mapping(source="userModel.nickname", target="user_nickname")
     @Mapping(source="messageModel.message_content", target="msg_message_content")
     MessageUserDto from(UserModel userModel, MessageModel messageModel);
-
-
-
 }
