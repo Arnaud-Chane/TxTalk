@@ -1,7 +1,7 @@
 package com.txtalk.chat.controller.message;
 
-import com.txtalk.chat.model.entity.message.MessageModel;
-import com.txtalk.chat.model.repository.message.MessageRepository;
+import com.txtalk.chat.dto.messageUserDto.MessageUserDto;
+import com.txtalk.chat.service.message.MessageService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,11 +15,11 @@ import java.util.Map;
 public class MessageController {
 
     @Autowired
-    MessageRepository messageRepository;
+    MessageService messageService;
 
     @PostMapping("/nickname")
-    public List<MessageModel> getMessagesByNickname(@RequestBody Map<String, String> body){
-        List<MessageModel> listMessagesByNickname = messageRepository.findMessagesByUser(body.get("nickname"));
+    public List<MessageUserDto> getMessagesByNickname(@RequestBody Map<String, String> body){
+        List<MessageUserDto> listMessagesByNickname = messageService.listMessagesByNickname(body.get("nickname"));
         return listMessagesByNickname;
     }
 

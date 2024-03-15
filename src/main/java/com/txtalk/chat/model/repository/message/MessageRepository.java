@@ -29,4 +29,7 @@ public interface MessageRepository extends JpaRepository<MessageModel, Integer> 
             "WHERE c.chat_name = ?1", nativeQuery = true)
     List<MessageModel> findMessagesByChat(String chatName);
 
+    @Query(value = "SELECT * FROM message WHERE user_id = ?1", nativeQuery = true)
+    List<MessageModel> findMessageByUserId(Integer id);
+
 }

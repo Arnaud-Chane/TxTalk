@@ -3,7 +3,6 @@ package com.txtalk.chat.service.mapper.messageUserMapper;
 import com.txtalk.chat.dto.messageUserDto.MessageUserDto;
 import com.txtalk.chat.model.entity.message.MessageModel;
 import com.txtalk.chat.model.entity.user.UserModel;
-import lombok.AllArgsConstructor;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

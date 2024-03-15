@@ -4,11 +4,16 @@ import com.txtalk.chat.dto.messageUserDto.MessageUserDto;
 import com.txtalk.chat.model.entity.message.MessageModel;
 import com.txtalk.chat.model.entity.user.UserModel;
 import com.txtalk.chat.service.mapper.messageUserMapper.MessageUserMapper;
+import com.txtalk.chat.service.message.MessageService;
 import org.mapstruct.factory.Mappers;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
-@SpringBootApplication
+import java.util.List;
+
+@SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 public class ChatApplication {
 
 	public static void main(String[] args) {
